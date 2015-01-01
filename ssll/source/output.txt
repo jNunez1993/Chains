@@ -1,0 +1,7 @@
+Juan@Juan-PC ~/c++/SSLL
+$ g++ -o SSLL UnitTestingSSLL.cpp -I.
+
+Juan@Juan-PC ~/c++/SSLL
+$ ./SSLL
+All tests passed (2049 assertions in 9 test cases)
+

@@ -1,0 +1,23 @@
+Juan@Juan-PC ~/c++/FINALCDAL/CDALFINAL
+$ g++ -o CDAL UnitTestingCDAL.cpp -I.
+In file included from UnitTestingCDAL.cpp:5:0:
+CDAL.h: In instantiation of ‘T CDAL<T>::pop_front() [with T = int]’:
+UnitTestingCDAL.cpp:59:3:   required from here
+CDAL.h:475:18: warning: converting to non-pointer type ‘int’ from NULL [-Wconversion-null]
+  current->arr[0] = NULL;
+                  ^
+CDAL.h: In instantiation of ‘T CDAL<T>::pop_back() [with T = int]’:
+UnitTestingCDAL.cpp:75:3:   required from here
+CDAL.h:535:23: warning: converting to non-pointer type ‘int’ from NULL [-Wconversion-null]
+  tail->arr[index - 1] = NULL;
+                       ^
+CDAL.h: In instantiation of ‘T CDAL<T>::remove(int) [with T = int]’:
+UnitTestingCDAL.cpp:105:5:   required from here
+CDAL.h:585:23: warning: converting to non-pointer type ‘int’ from NULL [-Wconversion-null]
+      current->arr[49] = NULL;
+                       ^
+
+Juan@Juan-PC ~/c++/FINALCDAL/CDALFINAL
+$ ./CDAL
+All tests passed (607 assertions in 9 test cases)
+

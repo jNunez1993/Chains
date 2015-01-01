@@ -1,0 +1,6 @@
+Juan@Juan-PC ~/c++/PSLL1
+$ g++ -o PSLL UnitTestingPSLL.cpp -I.
+
+Juan@Juan-PC ~/c++/PSLL1
+$ ./PSLL
+All tests passed (2049 assertions in 9 test cases)

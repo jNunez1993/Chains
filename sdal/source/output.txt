@@ -1,0 +1,43 @@
+Juan@Juan-PC ~
+$ g++ -o SDAL UnitTestingSDAL.cpp -I.
+$ g++ -o SDAL UnitTestingSDAL.cpp -I.
+In file included from UnitTestingSDAL.cpp:6:0:
+SDAL.h: In instantiation of ‘T SDAL<T>::pop_front() [with T = int]’:
+UnitTestingSDAL.cpp:41:26:   required from here
+SDAL.h:322:14: warning: converting to non-pointer type ‘int’ from NULL [-Wconversion-null]
+  arr[count-1]=NULL;
+              ^
+SDAL.h: In instantiation of ‘T SDAL<T>::pop_back() [with T = int]’:
+UnitTestingSDAL.cpp:56:25:   required from here
+SDAL.h:336:15: warning: converting to non-pointer type ‘int’ from NULL [-Wconversion-null]
+  arr[count-1] = NULL;
+               ^
+SDAL.h: In instantiation of ‘T SDAL<T>::remove(int) [with T = char]’:
+UnitTestingSDAL.cpp:108:16:   required from here
+SDAL.h:358:17: warning: converting to non-pointer type ‘char’ from NULL [-Wconversion-null]
+  arr[position ] = NULL;
+                 ^
+SDAL.h: In instantiation of ‘T SDAL<T>::remove(int) [with T = int]’:
+UnitTestingSDAL.cpp:121:18:   required from here
+SDAL.h:358:17: warning: converting to non-pointer type ‘int’ from NULL [-Wconversion-null]
+SDAL.h: In instantiation of ‘void SDAL<T>::clear() [with T = int]’:
+UnitTestingSDAL.cpp:200:13:   required from here
+SDAL.h:396:10: warning: converting to non-pointer type ‘int’ from NULL [-Wconversion-null]
+   arr[i] = NULL;
+          ^
+SDAL.h: In instantiation of ‘T SDAL<T>::pop_front() [with T = char]’:
+SDAL.h:351:17:   required from ‘T SDAL<T>::remove(int) [with T = char]’
+UnitTestingSDAL.cpp:108:16:   required from here
+SDAL.h:322:14: warning: converting to non-pointer type ‘char’ from NULL [-Wconversion-null]
+  arr[count-1]=NULL;
+              ^
+SDAL.h: In instantiation of ‘T SDAL<T>::pop_back() [with T = char]’:
+SDAL.h:354:16:   required from ‘T SDAL<T>::remove(int) [with T = char]’
+UnitTestingSDAL.cpp:108:16:   required from here
+SDAL.h:336:15: warning: converting to non-pointer type ‘char’ from NULL [-Wconversion-null]
+  arr[count-1] = NULL;
+
+
+Juan@Juan-PC ~/c++/FINALSDAL/SDAL1
+$ ./SDAL
+All tests passed (592 assertions in 10 test cases)
